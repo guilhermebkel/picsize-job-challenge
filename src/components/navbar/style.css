@@ -1,0 +1,12 @@
+.navbar{
+    position: absolute;
+    display: flex;
+    margin: auto auto; 
+    width: 100vw;
+    height: 70px;
+    background-color: #01444F;
+}
+
+.logo{
+    margin: auto auto;
+}
