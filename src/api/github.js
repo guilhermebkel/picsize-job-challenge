@@ -1,4 +1,4 @@
-const getUserData = async (username) => {
+const getUserData = async (username, callback) => {
 
     // Github API Link
     const githubAPI = `https://api.github.com/users/${username}`;
@@ -8,12 +8,12 @@ const getUserData = async (username) => {
     await fetch(githubAPI)
     .then(response => response.json())
     .then(userdata => {
-        console.log(userdata);
+        callback(userdata);
     });
 
 }
 
-const getUserList = async (username, numberOfRepositories) => {
+const getUserList = async (username, numberOfRepositories, callback) => {
 
     // Github API Link
     const githubAPI = `https://api.github.com/search/users?q=${username}+repos:%3E${numberOfRepositories}`;
@@ -24,7 +24,7 @@ const getUserList = async (username, numberOfRepositories) => {
     await fetch(githubAPI)
     .then(response => response.json())
     .then(userlist => {
-        console.log(userlist.items);
+        callback(userlist.items);
     });
 
 }
