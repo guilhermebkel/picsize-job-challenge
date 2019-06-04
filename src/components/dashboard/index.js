@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import GithubLogo from '../../resources/github-logo.png'
 import List from '../list/index';
-import { getUserList } from '../../api/github';
 import './style.css'
+
+// Requests the Github API and creates a method with it.
+const githubRouter = new require('../../api/github.js');
+const githubAPI = new githubRouter();
 
 class Dashboard extends Component {
   constructor(props) {
@@ -24,12 +27,13 @@ class Dashboard extends Component {
 
         // When user clicks on 'Submit' button, it requests the API
         // and come back with a response containing the found data.
-        getUserList(this.state.username, this.state.repositories, callback);
+        githubAPI.getUserList(this.state.username, this.state.repositories, callback);
 
     }).then((userList) => {
         this.setState({
             data: userList
         })
+        console.log(this.state.data)
     })
   }
 
@@ -59,7 +63,7 @@ class Dashboard extends Component {
                         <img alt="github" src={GithubLogo} />
                     </div>
                     <form className="form">
-                        <h1 className="form-title">Username:</h1>
+                        <h1 className="form-title">User:</h1>
                         <input className="form-input" value={this.state.username} onChange={this.handleUsername}></input>
                         <h1 className="form-title">Number of Repositories:</h1>
                         <input className="form-input" value={this.state.repositories} onChange={this.handleRepositories} type="number"></input>
