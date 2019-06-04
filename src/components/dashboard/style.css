@@ -1,0 +1,78 @@
+.dashboard{
+    display: flex;
+    background-color: #53c2d4; 
+    width: 100vw;
+    height: 100vh;
+}
+.dashboard-container{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: auto auto;
+    background-color: #343a40;
+    box-shadow: 0px 5px 10px rgba(1, 69, 79, 0.5);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.github-logo{
+    display: flex;
+}
+.github-logo img{
+    width: 100px;
+    height: 100px;
+    margin: auto auto 20px auto;
+}
+
+.form{
+    display: inline-block;
+    width: 200px;
+}
+.form-title{
+    font-size: 14px;
+    color: white; 
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+.form-input{
+    border-width: 0;
+    height: 25px;
+    padding-left: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.form-button{
+    display: flex; 
+    background-color: #42D79E;
+    border-width: 0;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.form-button:hover{
+    display: flex; 
+    background-color: #F29A32;
+    border-width: 0;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.form-button h1{
+    margin: auto auto;
+    font-size: 13px;
+}

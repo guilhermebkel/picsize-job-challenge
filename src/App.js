@@ -16,10 +16,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Navbar />
-        <div style={{display: "flex", width: "100vw", height: "100vh", backgroundColor: "#53c2d4"}}>
-          
-          <Dashboard />
-        </div>
+        <Dashboard />
       </React.Fragment>
     );
   }
