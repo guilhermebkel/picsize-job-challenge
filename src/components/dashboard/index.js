@@ -17,13 +17,13 @@ class Dashboard extends Component {
         data: []
     };
 
-    this.search = this.search.bind(this);
+    this.searchUser = this.searchUser.bind(this);
     this.handleUsername = this.handleUsername.bind(this);
     this.handleRepositories = this.handleRepositories.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
-  search(){
+  searchUser(){
     new Promise((callback) => {
 
         // When user clicks on 'Search' button, it requests the API
@@ -75,7 +75,7 @@ class Dashboard extends Component {
                         <input className="form-input" value={this.state.username} onChange={this.handleUsername} onKeyPress={this.handleKeyPress}></input>
                         <h1 className="form-title">NUMBER OF REPOSITORIES:</h1>
                         <input className="form-input" value={this.state.repositories} onChange={this.handleRepositories} type="number" onKeyPress={this.handleKeyPress}></input>
-                        <div className="form-button" onClick={this.search}><h1>SEARCH</h1></div>
+                        <div className="form-button" onClick={this.searchUser}><h1>SEARCH</h1></div>
                     </form>
                 </div>
             </div>

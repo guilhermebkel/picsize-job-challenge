@@ -1,0 +1,6 @@
+@media only screen and (max-width:500px){
+    .list{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

@@ -1,21 +1,13 @@
 import React, { Component } from 'react';
+import UserCard from '../usercard/index';
 import './style.css'
-
-const UserCard = props => {
-  return (
-    <div className="user-card">
-      <h1 className="user-name">{props.login}</h1>
-    </div>
-  )
-}
+import './responsive.css'
 
 class List extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-    
-    };
+    this.state = {};
   }
 
   render() {

@@ -15,6 +15,20 @@ module.exports = function GithubAPI(){
     
     }
 
+    this.getUserRepositories = async (username, callback) => {
+
+        const githubAPI = `https://api.github.com/users/${username}/repos`;
+    
+        // Sends a request to the Github API and gets
+        // a response which contains full user data.
+        await fetch(githubAPI)
+        .then(response => response.json())
+        .then(userRepositories => {
+            callback(userRepositories);
+        });
+    
+    }
+
     this.getUserList = async (username, numberOfRepositories, callback) => {
 
         // Github API Link

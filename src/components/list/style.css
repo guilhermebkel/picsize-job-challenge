@@ -2,31 +2,3 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
 }
-
-.user-card{
-    text-align: center;
-    cursor: pointer;
-    height: 60px;
-    background-color: white;
-    margin: 10px 5px; 
-    border-radius: 5px;
-    box-shadow: 0 5px 8px rgba(9,45,66,.15);
-    color: #343a40;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-.user-card:hover{
-    background-color: #F29A32;
-    color: white;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-.user-name{
-    padding: 10px 20px;
-    font-size: 12px;
-    font-weight: normal;
-}
