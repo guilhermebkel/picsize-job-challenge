@@ -64,7 +64,7 @@ class UserCard extends Component {
             this.setState({
                 userRepositories: userRepositories
             })
-
+            
             // So after getting all data and repositories
             // from user, it shows everything on a Modal.
             this.openModal();
@@ -94,7 +94,9 @@ class UserCard extends Component {
             </div>
             
             <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={modalStyle} >
-                <img className="modal-image" alt="avatar" src={this.state.userAvatar} />
+                <a href={this.state.userGitUrl} target="_blank" rel="noopener noreferrer">
+                  <img className="modal-image" alt="avatar" src={this.state.userAvatar} />
+                </a>
                 <h2 className="modal-title">{this.state.userName}</h2>
                 <h2 className="modal-subtitle"><strong>Location: </strong>{this.state.userLocation}</h2>
                 <h2 className="modal-subtitle"><strong>Repositories: </strong></h2>

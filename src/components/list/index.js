@@ -11,7 +11,8 @@ class List extends Component {
   }
 
   render() {
-
+    // Shows a list of the found users
+    // from the request.
     return (
         <div className="list"> 
             {this.props.userList.map(userData => (

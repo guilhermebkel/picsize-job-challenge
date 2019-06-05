@@ -14,26 +14,32 @@ class Dashboard extends Component {
     this.state = {
         username: "",
         repositories: 0,
-        data: []
+        data: [],
     };
-
     this.searchUser = this.searchUser.bind(this);
     this.handleUsername = this.handleUsername.bind(this);
     this.handleRepositories = this.handleRepositories.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
+  // This is used to move the screen towards the list of users
+  // when someone makes a request on the API.
+  goToUserList(){
+    const userList = document.getElementsByClassName("list");
+    userList[0].scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  }
+
   searchUser(){
     new Promise((callback) => {
-
         // When user clicks on 'Search' button, it requests the API
         // and come back with a response containing the found data.
-        githubAPI.getUserList(this.state.username, this.state.repositories, callback);
+        githubAPI.getListOfUsers(this.state.username, this.state.repositories, callback);
 
-    }).then((userList) => {
+    }).then((listOfUsers) => {
         this.setState({
-            data: userList
+            data: listOfUsers
         })
+        this.goToUserList();
     })
   }
 
@@ -80,7 +86,7 @@ class Dashboard extends Component {
                 </div>
             </div>
 
-            <List userList={this.state.data} />
+            <List userList={this.state.data} className="list" />
         </React.Fragment>
     );
   }
