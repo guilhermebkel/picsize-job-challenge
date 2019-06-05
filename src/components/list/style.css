@@ -1,3 +1,8 @@
+.list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
 .user-card{
     text-align: center;
     cursor: pointer;
@@ -24,12 +29,4 @@
     padding: 10px 20px;
     font-size: 12px;
     font-weight: normal;
-}
-
-.auto-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-template-rows: repeat(6, 200px);
-    grid-gap: 1rem;
-    grid-auto-flow: dense;
 }

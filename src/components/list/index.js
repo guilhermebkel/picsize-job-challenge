@@ -3,12 +3,8 @@ import './style.css'
 
 const UserCard = props => {
   return (
-    <div className="wrapper">
-      <div className="auto-grid">
-        <div className="user-card">
-          <h1 className="user-name">{props.login}</h1>
-        </div>
-      </div>
+    <div className="user-card">
+      <h1 className="user-name">{props.login}</h1>
     </div>
   )
 }
@@ -25,7 +21,7 @@ class List extends Component {
   render() {
 
     return (
-        <div style={{display: "flex"}}> 
+        <div className="list"> 
             {this.props.userList.map(userData => (
               <UserCard {...userData} />
             ))}
