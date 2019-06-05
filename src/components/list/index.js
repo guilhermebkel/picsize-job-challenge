@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import './style.css'
 
+const UserCard = props => {
+  return (
+    <div className="wrapper">
+      <div className="auto-grid">
+        <div className="user-card">
+          <h1 className="user-name">{props.login}</h1>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 class List extends Component {
   constructor(props) {
     super(props);
@@ -13,8 +25,10 @@ class List extends Component {
   render() {
 
     return (
-        <div style={{width: "100vw", height: "100vh", backgroundColor: "red"}}> 
-            <h1>{this.props.data}</h1>
+        <div style={{display: "flex"}}> 
+            {this.props.userList.map(userData => (
+              <UserCard {...userData} />
+            ))}
         </div>
     );
   }

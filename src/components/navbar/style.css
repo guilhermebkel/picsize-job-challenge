@@ -1,5 +1,5 @@
 .navbar{
-    position: absolute;
+    position: relative;
     display: flex;
     margin: auto auto; 
     width: 100vw;
