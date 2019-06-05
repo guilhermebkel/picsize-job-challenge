@@ -57,7 +57,7 @@ class Dashboard extends Component {
   // it automatically makes the search.
   handleKeyPress(event){
       if(event.key === 'Enter'){
-          this.search();
+          this.searchUser();
       }
   }
 
