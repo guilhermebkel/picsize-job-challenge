@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PICSIZE-Challenge/precache-manifest.898744d5982be74bd82236dd1b22946d.js"
+  "/PICSIZE-Challenge/precache-manifest.5d4530d5c3ccd72eb7da68da186c542b.js"
 );
 
 self.addEventListener('message', (event) => {
