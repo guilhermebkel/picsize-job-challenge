@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d24c6d4aa349ec699c30c969a125f09",
+    "revision": "c34744f9940cc2ce893ff9e4e7befb96",
     "url": "/PICSIZE-Challenge/index.html"
   },
   {
-    "revision": "9073bff2a8396754624a",
+    "revision": "08135853eff095b97152",
     "url": "/PICSIZE-Challenge/static/css/main.d7893c9e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PICSIZE-Challenge/static/js/2.9d870939.chunk.js"
   },
   {
-    "revision": "9073bff2a8396754624a",
-    "url": "/PICSIZE-Challenge/static/js/main.a235c3b5.chunk.js"
+    "revision": "08135853eff095b97152",
+    "url": "/PICSIZE-Challenge/static/js/main.b6c27460.chunk.js"
   },
   {
     "revision": "c7dd89938bb22c2b30b7",
