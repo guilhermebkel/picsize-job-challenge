@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "picsize-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
     "react-redux": "^6.0.1",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.2",
@@ -34,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://guilherr.me/PICSIZE-Challenge"
 }
