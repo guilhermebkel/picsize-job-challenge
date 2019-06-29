@@ -4,7 +4,7 @@ import List from '../list/index';
 import './style.css'
 
 // Requests the Github API and creates a method with it.
-const githubRouter = require('../../api/github.js');
+import githubRouter from '../../api/github.js';
 const githubAPI = new githubRouter();
 
 class Dashboard extends Component {

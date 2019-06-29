@@ -5,7 +5,7 @@ import './style.css'
 import './responsive.css'
 
 // Requests the Github API and creates a method with it.
-const githubRouter = require('../../api/github.js');
+import githubRouter from '../../api/github.js';
 const githubAPI = new githubRouter();
 
 // Automatically lists the user repositories when needed.

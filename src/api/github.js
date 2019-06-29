@@ -1,4 +1,4 @@
-module.exports = function GithubAPI(){
+export default function GithubAPI(){
     
     this.getUserData = async (username, callback) => {
 
