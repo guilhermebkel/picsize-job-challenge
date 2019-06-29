@@ -8,7 +8,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 ReactDOM.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route exact path="/" component={App} />
-    </BrowserRouter>
+    </BrowserRouter> 
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
