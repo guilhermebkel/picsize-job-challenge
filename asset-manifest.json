@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PICSIZE-Challenge/static/css/main.d7893c9e.chunk.css",
-    "main.js": "/PICSIZE-Challenge/static/js/main.74ea2dbb.chunk.js",
-    "main.js.map": "/PICSIZE-Challenge/static/js/main.74ea2dbb.chunk.js.map",
+    "main.js": "/PICSIZE-Challenge/static/js/main.9828d051.chunk.js",
+    "main.js.map": "/PICSIZE-Challenge/static/js/main.9828d051.chunk.js.map",
     "runtime~main.js": "/PICSIZE-Challenge/static/js/runtime~main.67279277.js",
     "runtime~main.js.map": "/PICSIZE-Challenge/static/js/runtime~main.67279277.js.map",
-    "static/js/2.bf6dad59.chunk.js": "/PICSIZE-Challenge/static/js/2.bf6dad59.chunk.js",
-    "static/js/2.bf6dad59.chunk.js.map": "/PICSIZE-Challenge/static/js/2.bf6dad59.chunk.js.map",
+    "static/js/2.9d870939.chunk.js": "/PICSIZE-Challenge/static/js/2.9d870939.chunk.js",
+    "static/js/2.9d870939.chunk.js.map": "/PICSIZE-Challenge/static/js/2.9d870939.chunk.js.map",
     "index.html": "/PICSIZE-Challenge/index.html",
-    "precache-manifest.5d4530d5c3ccd72eb7da68da186c542b.js": "/PICSIZE-Challenge/precache-manifest.5d4530d5c3ccd72eb7da68da186c542b.js",
+    "precache-manifest.3955d1766c70e9e259e6184b1c0dcd1b.js": "/PICSIZE-Challenge/precache-manifest.3955d1766c70e9e259e6184b1c0dcd1b.js",
     "service-worker.js": "/PICSIZE-Challenge/service-worker.js",
     "static/css/main.d7893c9e.chunk.css.map": "/PICSIZE-Challenge/static/css/main.d7893c9e.chunk.css.map"
   }
